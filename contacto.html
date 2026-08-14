@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Fluir Outdoor Experiences</title>
+<meta name="description" content="Reservá tu experiencia con Fluir Outdoor Experiences en Mendoza. Escribinos por WhatsApp o completá el formulario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Fluir</span>
+      <span class="brand-sub">Outdoor Experiences</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <a href="contacto.html" class="nav-cta">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<!-- 1. HERO BREVE -->
+<section class="hero hero-small">
+  <div class="hero-inner">
+    <p class="eyebrow">Hablemos</p>
+    <h1>Contanos tu plan, nosotros nos encargamos del resto.</h1>
+    <p class="lead">Escribinos por el formulario o directo por WhatsApp — te respondemos con una propuesta a medida de tu grupo.</p>
+  </div>
+</section>
+
+<!-- 2. FORMULARIO -->
+<section class="tight">
+  <div class="wrap">
+    <div class="split">
+      <div class="form-card">
+        <h2 style="font-size:1.4rem;">Reservá o consultanos</h2>
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="personas">Cantidad de personas</label>
+              <input type="number" id="personas" name="personas" min="1">
+            </div>
+            <div class="field">
+              <label for="actividad">Actividad de interés</label>
+              <select id="actividad" name="actividad">
+                <option>Rafting</option>
+                <option>Trekking</option>
+                <option>SUP</option>
+                <option>Kayak de lago</option>
+                <option>Cuatriciclos</option>
+                <option>Bodega</option>
+                <option>No estoy seguro/a todavía</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fecha">Fecha estimada</label>
+              <input type="date" id="fecha" name="fecha">
+            </div>
+            <div class="field full">
+              <label for="mensaje">Contanos más sobre tu grupo</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Ej: somos 4 amigos, buscamos algo de dificultad moderada para un sábado a la mañana..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:1.4rem;">Enviar consulta</button>
+          <p class="form-note">Formulario de ejemplo: al enviarlo se muestra una confirmación en pantalla. Para recibir estos datos en tu mail o WhatsApp hay que conectarlo a un servicio de formularios (ver nota al final de la página).</p>
+          <div class="form-success" id="form-success">¡Gracias! Recibimos tu consulta y te vamos a responder a la brevedad.</div>
+        </form>
+      </div>
+
+      <div>
+        <p class="eyebrow">Otras formas de contacto</p>
+        <h2>Elegí como prefieras</h2>
+        <p>Si preferís no completar el formulario, también podés escribirnos directamente.</p>
+        <div class="contact-info-grid" style="grid-template-columns:1fr; margin-top:1.4rem;">
+          <div class="info-card">
+            <h4>WhatsApp</h4>
+            <p>La vía más rápida para consultar disponibilidad.</p>
+            <a href="#" class="link">+54 9 261 000 0000</a>
+          </div>
+          <div class="info-card">
+            <h4>Teléfono</h4>
+            <p>Atendemos de lunes a sábado.</p>
+            <a href="#" class="link">+54 261 000 0000</a>
+          </div>
+          <div class="info-card">
+            <h4>Email</h4>
+            <p>Para consultas más detalladas o grupos grandes.</p>
+            <a href="#" class="link">hola@fluiroutdoor.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. UBICACIÓN -->
+<section style="background:var(--crema-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Dónde nos encontramos</p>
+      <h2>Punto de encuentro</h2>
+      <p>El punto de largada varía según la actividad — te lo confirmamos al reservar. Esta es nuestra zona de operación en Mendoza.</p>
+    </div>
+    <div class="map-block">
+      <span>Mapa de ejemplo — insertar aquí el iframe de Google Maps con la dirección real del punto de encuentro.</span>
+    </div>
+  </div>
+</section>
+
+<!-- 5 y 6. HORARIOS Y REDES -->
+<section class="tight">
+  <div class="wrap">
+    <div class="contact-info-grid">
+      <div class="info-card">
+        <h4>Horarios de atención</h4>
+        <p>Lunes a sábado, 9 a 18 hs.<br>Salidas según actividad y horario de luz solar.</p>
+      </div>
+      <div class="info-card">
+        <h4>Redes sociales</h4>
+        <p>Seguinos para ver fotos y videos recientes de cada salida.</p>
+        <a href="#" class="link">Instagram</a> · <a href="#" class="link">Facebook</a>
+      </div>
+      <div class="info-card">
+        <h4>Ubicación general</h4>
+        <p>Mendoza, Argentina. Zona de operación en valle y precordillera.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FAQ DE RESERVA -->
+<section>
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow">Antes de escribirnos</p>
+      <h2>Preguntas sobre la reserva</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Cómo puedo pagar?</summary>
+        <p class="faq-a">Aceptamos transferencia y efectivo. Para grupos grandes o agencias, consultanos por otras modalidades.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Piden anticipo para reservar?</summary>
+        <p class="faq-a">Sí, para confirmar el cupo en tu grupo pedimos una seña. El resto se abona el día de la actividad.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo cancelar o cambiar la fecha?</summary>
+        <p class="faq-a">Sí, avisando con anticipación podés reprogramar sin costo. Consultanos las condiciones puntuales según la actividad.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Fluir</span>
+        <p>Rafting, trekking y aventura en grupos reducidos, en el corazón de Mendoza.</p>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Actividades</h4>
+        <ul>
+          <li><a href="servicios.html#rafting">Rafting</a></li>
+          <li><a href="servicios.html#trekking">Trekking</a></li>
+          <li><a href="servicios.html#sup">SUP y kayak</a></li>
+          <li><a href="servicios.html#bodega">Bodega</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fluir Outdoor Experiences · Mendoza, Argentina</span>
+      <span>Sitio de ejemplo — reemplazar textos e imágenes por contenido real.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

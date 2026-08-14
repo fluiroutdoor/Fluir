@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Fluir Outdoor Experiences</title>
+<meta name="description" content="Rafting, trekking, SUP, kayak de lago, cuatriciclos y bodega en Mendoza. Todas nuestras actividades, en grupos reducidos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Fluir</span>
+      <span class="brand-sub">Outdoor Experiences</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html" class="active">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="nav-cta">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<!-- 1. HERO DE CATEGORÍA -->
+<section class="hero hero-small">
+  <div class="hero-inner">
+    <p class="eyebrow">Nuestras actividades</p>
+    <h1>Agua, tierra y bodega — elegí tu plan</h1>
+    <p class="lead">Todas nuestras experiencias se arman en grupos reducidos. Filtrá por tipo de actividad o mirá todo lo que ofrecemos.</p>
+  </div>
+</section>
+
+<!-- 2 y 3. FILTROS + TARJETAS -->
+<section id="actividades">
+  <div class="wrap">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="todas">Todas</button>
+      <button class="filter-btn" data-filter="agua">Agua</button>
+      <button class="filter-btn" data-filter="tierra">Tierra</button>
+      <button class="filter-btn" data-filter="bodega">Bodega</button>
+    </div>
+    <div class="card-grid">
+      <article class="card" id="rafting" data-category="agua">
+        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-body">
+          <h3>Rafting</h3>
+          <span class="card-meta">Medio día · Nivel moderado</span>
+          <p class="card-desc">Bajás el río en un bote chico, con guía propio de Fluir marcando cada maniobra.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+      <article class="card" id="trekking" data-category="tierra">
+        <div class="card-media tierra"><span class="tag">Tierra</span></div>
+        <div class="card-body">
+          <h3>Trekking</h3>
+          <span class="card-meta">Medio día o día completo</span>
+          <p class="card-desc">Senderos de montaña con distintos niveles, guiados por nuestro equipo.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+      <article class="card" id="sup" data-category="agua">
+        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-body">
+          <h3>SUP</h3>
+          <span class="card-meta">2 a 3 horas · Todo nivel</span>
+          <p class="card-desc">Stand up paddle en el lago, ideal para grupos que arrancan desde cero.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+      <article class="card" id="kayak" data-category="agua">
+        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-body">
+          <h3>Kayak de lago</h3>
+          <span class="card-meta">2 a 3 horas · Todo nivel</span>
+          <p class="card-desc">Recorrido en kayak por el lago, a ritmo cómodo, apto para toda la familia.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+      <article class="card" id="cuatriciclos" data-category="tierra">
+        <div class="card-media tierra"><span class="tag">Tierra</span></div>
+        <div class="card-body">
+          <h3>Cuatriciclos</h3>
+          <span class="card-meta">2 horas aprox. · Todo nivel</span>
+          <p class="card-desc">Circuitos por caminos de montaña con proveedor aliado, equipo y seguridad incluidos.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+      <article class="card" id="bodega" data-category="bodega">
+        <div class="card-media bodega"><span class="tag">Bodega</span></div>
+        <div class="card-body">
+          <h3>Bodega</h3>
+          <span class="card-meta">Visita guiada + degustación</span>
+          <p class="card-desc">Recorrida por viñedos y degustación en bodega aliada para cerrar el día.</p>
+          <a href="#ficha-rafting" class="card-link">Ver ficha completa</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4-7. FICHA DE ACTIVIDAD (detalle, ejemplo con Rafting) -->
+<section style="background:var(--crema-2)" id="ficha-rafting">
+  <div class="wrap">
+    <span class="badge-note">Ejemplo de ficha de actividad — esta misma estructura se repite para cada actividad</span>
+    <div class="detail-card">
+      <div class="detail-grid">
+        <div class="detail-media"></div>
+        <div class="detail-content">
+          <p class="eyebrow">Agua · Rafting</p>
+          <h2>Rafting en el río</h2>
+          <p>Bajada guiada en bote, en grupos reducidos, con todo el equipo técnico incluido. Ideal para grupos de amigos o familias con ganas de una dosis de adrenalina compartida.</p>
+          <div class="spec-row">
+            <div class="spec"><b>Medio día</b>Duración</div>
+            <div class="spec"><b>Moderado</b>Dificultad</div>
+            <div class="spec"><b>Desde $ —</b>Precio por persona</div>
+          </div>
+          <div class="incl-grid">
+            <div class="yes">
+              <h4>Incluye</h4>
+              <ul><li>Chaleco y casco</li><li>Guía de Fluir</li><li>Traslado al punto de largada</li></ul>
+            </div>
+            <div class="no">
+              <h4>No incluye</h4>
+              <ul><li>Ropa de cambio</li><li>Traslado desde el alojamiento</li></ul>
+            </div>
+          </div>
+          <a href="contacto.html" class="btn btn-primary">Reservar rafting</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonio específico -->
+    <div class="testi" style="margin-top:2rem; max-width:640px;">
+      <p class="quote">"Fuimos un grupo de seis amigos y nunca sentimos que éramos 'uno más'. Se acuerdan de tu nombre después de la primera vuelta."</p>
+      <div class="who">Grupo de amigos, Buenos Aires</div>
+      <div class="what">Rafting</div>
+    </div>
+
+    <!-- FAQ específica -->
+    <div class="faq-list" style="margin-top:2rem; max-width:640px;">
+      <details class="faq-item">
+        <summary>¿Hay edad mínima para rafting?</summary>
+        <p class="faq-a">Sí, recomendamos a partir de cierta edad según el caudal del río en el momento de la salida. Te lo confirmamos al reservar.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito saber nadar?</summary>
+        <p class="faq-a">Es recomendable, pero el chaleco salvavidas y el guía acompañan en todo momento a quienes tienen menos experiencia en el agua.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="wrap">
+    <h2>¿Cuál actividad va con tu grupo?</h2>
+    <p>Contanos cuántos son y qué buscan, y te ayudamos a armar el plan.</p>
+    <a href="contacto.html" class="btn btn-primary">Consultar disponibilidad</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Fluir</span>
+        <p>Rafting, trekking y aventura en grupos reducidos, en el corazón de Mendoza.</p>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Actividades</h4>
+        <ul>
+          <li><a href="servicios.html#rafting">Rafting</a></li>
+          <li><a href="servicios.html#trekking">Trekking</a></li>
+          <li><a href="servicios.html#sup">SUP y kayak</a></li>
+          <li><a href="servicios.html#bodega">Bodega</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fluir Outdoor Experiences · Mendoza, Argentina</span>
+      <span>Sitio de ejemplo — reemplazar textos e imágenes por contenido real.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
