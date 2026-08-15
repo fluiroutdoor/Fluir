@@ -124,6 +124,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .brand { display: flex; flex-direction: column; line-height: 1; }
 .brand-name { font-family: var(--display); font-weight: 700; font-size: 1.5rem; color: var(--verde); letter-spacing: 0.01em; }
 .brand-sub { font-size: 0.55rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--dorado); margin-top: 2px; }
+.brand-logo { height: 40px; width: auto; display: block; }
 
 .nav-links { display: flex; gap: 2rem; align-items: center; }
 .nav-links a {
@@ -224,6 +225,16 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .card-media.agua { background: linear-gradient(150deg, var(--azul-rio), #33565b); }
 .card-media.tierra { background: linear-gradient(150deg, var(--terracota), #7e3c28); }
 .card-media.bodega { background: linear-gradient(150deg, var(--dorado), #8a6a3c); }
+.card-media.has-photo {
+  background-size: cover;
+  background-position: center;
+}
+.card-media.has-photo::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%);
+}
+.card-media.has-photo .tag { position: relative; z-index: 1; }
 
 .tag {
   font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
@@ -342,6 +353,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .footer-grid a:hover { opacity: 1; color: var(--dorado); }
 .footer-brand .brand-name { color: var(--crema); }
 .footer-brand p { font-size: 0.85rem; opacity: 0.75; margin-top: 0.8rem; max-width: 32ch; }
+.footer-logo { height: 34px; width: auto; display: block; opacity: 0.95; }
 .footer-bottom {
   border-top: 1px solid rgba(244,241,234,0.15); margin-top: 2.6rem; padding-top: 1.4rem;
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem;

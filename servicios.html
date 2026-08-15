@@ -8,14 +8,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="brand">
-      <span class="brand-name">Fluir</span>
-      <span class="brand-sub">Outdoor Experiences</span>
+      <img src="logo.png" alt="Fluir Outdoor Experiences" class="brand-logo">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -50,7 +51,7 @@
     </div>
     <div class="card-grid">
       <article class="card" id="rafting" data-category="agua">
-        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-media agua has-photo" style="background-image:url('rafting-1.jpg')"><span class="tag">Agua</span></div>
         <div class="card-body">
           <h3>Rafting</h3>
           <span class="card-meta">Medio día · Nivel moderado</span>
@@ -59,7 +60,7 @@
         </div>
       </article>
       <article class="card" id="trekking" data-category="tierra">
-        <div class="card-media tierra"><span class="tag">Tierra</span></div>
+        <div class="card-media tierra has-photo" style="background-image:url('trekking-desierto.jpg')"><span class="tag">Tierra</span></div>
         <div class="card-body">
           <h3>Trekking</h3>
           <span class="card-meta">Medio día o día completo</span>
@@ -68,7 +69,7 @@
         </div>
       </article>
       <article class="card" id="sup" data-category="agua">
-        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-media agua has-photo" style="background-image:url('sup-1.jpg')"><span class="tag">Agua</span></div>
         <div class="card-body">
           <h3>SUP</h3>
           <span class="card-meta">2 a 3 horas · Todo nivel</span>
@@ -77,7 +78,7 @@
         </div>
       </article>
       <article class="card" id="kayak" data-category="agua">
-        <div class="card-media agua"><span class="tag">Agua</span></div>
+        <div class="card-media agua has-photo" style="background-image:url('kayak-3.jpg')"><span class="tag">Agua</span></div>
         <div class="card-body">
           <h3>Kayak de lago</h3>
           <span class="card-meta">2 a 3 horas · Todo nivel</span>
@@ -95,7 +96,7 @@
         </div>
       </article>
       <article class="card" id="bodega" data-category="bodega">
-        <div class="card-media bodega"><span class="tag">Bodega</span></div>
+        <div class="card-media bodega has-photo" style="background-image:url('bodega-barricas.jpg')"><span class="tag">Bodega</span></div>
         <div class="card-body">
           <h3>Bodega</h3>
           <span class="card-meta">Visita guiada + degustación</span>
@@ -113,7 +114,7 @@
     <span class="badge-note">Ejemplo de ficha de actividad — esta misma estructura se repite para cada actividad</span>
     <div class="detail-card">
       <div class="detail-grid">
-        <div class="detail-media"></div>
+        <div class="detail-media" style="background-image:url('rafting-3.jpg'); background-size:cover; background-position:center;"></div>
         <div class="detail-content">
           <p class="eyebrow">Agua · Rafting</p>
           <h2>Rafting en el río</h2>
@@ -172,7 +173,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="brand-name">Fluir</span>
+        <img src="logo-cream.png" alt="Fluir Outdoor Experiences" class="footer-logo">
         <p>Rafting, trekking y aventura en grupos reducidos, en el corazón de Mendoza.</p>
       </div>
       <div>
