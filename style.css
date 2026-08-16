@@ -222,12 +222,13 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
   aspect-ratio: 4/3; position: relative;
   display: flex; align-items: flex-end; padding: 1rem;
 }
-.card-media.agua { background: linear-gradient(150deg, var(--azul-rio), #33565b); }
-.card-media.tierra { background: linear-gradient(150deg, var(--terracota), #7e3c28); }
-.card-media.bodega { background: linear-gradient(150deg, var(--dorado), #8a6a3c); }
+.card-media.agua { background-color: var(--azul-rio); background-image: linear-gradient(150deg, var(--azul-rio), #33565b); }
+.card-media.tierra { background-color: var(--terracota); background-image: linear-gradient(150deg, var(--terracota), #7e3c28); }
+.card-media.bodega { background-color: var(--dorado); background-image: linear-gradient(150deg, var(--dorado), #8a6a3c); }
 .card-media.has-photo {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .card-media.has-photo::before {
   content: "";
